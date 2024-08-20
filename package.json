@@ -1,0 +1,59 @@
+{
+  "name": "cleanfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://impranaysharma.github.io/portfolio",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "uniqid": "^5.4.0",
+    "web-vitals": "^2.1.0",
+    "webpack": "^5.93.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "set SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "react-scripts test --openssl-legacy-provider",
+    "eject": "react-scripts eject --openssl-legacy-provider",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "^2.3.2"
+  },
+  "description": "Cleanfolio is a portfolio template built with React. However, if you prefer a template built with HTML, CSS, and JavaScript, you can check out [Cleanfolio Minimal](https://github.com/rjshkhr/cleanfolio-minimal).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
